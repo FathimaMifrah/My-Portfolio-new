@@ -20,18 +20,23 @@ export function Projects() {
           {projects.map((project, i) => (
             <ScrollReveal key={project.title} delay={(i + 1) as 0 | 1 | 2 | 3 | 4}>
               <article className="projects__card">
-                <div
-                  className="projects__preview"
-                  style={{
-                    backgroundImage: `linear-gradient(135deg, rgba(110, 79, 255, 0.8), rgba(42, 24, 89, 0.75)), url(${project.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  <div className="projects__preview-inner">
-                    <span className="projects__preview-label">
-                      {project.shortLabel}
-                    </span>
+                <div className="projects__preview">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="projects__image"
+                  />
+                  <div className="projects__preview-overlay">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="projects__overlay-btn"
+                      aria-label="View on GitHub"
+                    >
+                      <FiGithub size={22} />
+                      <span>View on GitHub</span>
+                    </a>
                   </div>
                 </div>
 
@@ -73,3 +78,4 @@ export function Projects() {
     </section>
   );
 }
+
