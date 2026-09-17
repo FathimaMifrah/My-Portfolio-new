@@ -1,0 +1,61 @@
+import profilePic from "../assets/profile.jpg";
+
+export const profile = {
+  name: "Fathima Mifrah",
+  role: "Intern Software Engineer",
+  location: "Thorayaya, Kurunegala",
+  email: "fathimamifrah02@gmail.com",
+  phone: "0755954323",
+  github: "https://github.com/FathimaMifrah",
+  linkedin: "https://www.linkedin.com/in/fathima-mifrah",
+  avatar: profilePic,
+  summary:
+    "HNDIT course completer with a strong interest in Software Engineering and a focus on Frontend Development. I have hands-on experience in web development through academic and personal projects, with knowledge of HTML, CSS, JavaScript, React, Node.js, PHP, and MySQL.",
+  goal:
+    "Currently seeking an internship to gain practical industry experience, contribute to real-world projects, and grow as a Software Engineer.",
+  languages: ["English", "Tamil", "Sinhala"],
+  softSkills: [
+    "Teamwork",
+    "Communication",
+    "Problem-solving",
+    "Adaptability",
+    "Time Management",
+  ],
+};
+
+export const projects = [
+  {
+    title: "Home Bakers Product Marketplace",
+    shortLabel: "Home Bakers",
+    description:
+      "Developed a web marketplace connecting home bakers with customers, featuring product browsing, ordering, authentication, and management features.",
+    tags: ["React", "Node.js", "MySQL", "HTML", "CSS"],
+    github: "https://github.com/FathimaMifrah/Home-bakers-product-market-place",
+    demo: null,
+    image:
+      "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    title: "Coffee Shop Management System",
+    shortLabel: "Coffee Shop",
+    description:
+      "A web-based management system designed to manage coffee shop products, customers, orders, sales, and users.",
+    tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/FathimaMifrah/Coffee-Shop-Management-System",
+    demo: null,
+    image:
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    title: "Boarding House Management System",
+    shortLabel: "Boarding House",
+    description:
+      "Developed a web-based system for managing boarding house information and related activities.",
+    tags: ["PHP", "HTML", "CSS", "MySQL"],
+    github: "https://github.com/FathimaMifrah/Boarding-House-Management-System",
+    demo: null,
+    image:
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+  },
+];
+
